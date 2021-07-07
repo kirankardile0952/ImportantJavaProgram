@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+ <!--Here we have created bean for Vodafone and Airtel
+ 
+   <bean class="com.example.springioc.Airtel" id="airtel"></bean>
+<bean class="com.example.springioc.Vodafone" id="vodafone"></bean> -->
+
+<bean id="sim" class="com.example.springioc.Vodafone"></bean>
+</beans>

@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean class="com.example.dependencyinjection.Student" id="student"> 
+		<property name="studentName" value="Kiran"/> <property name="id" value="1"/> 
+		<constructor-arg></constructor-arg> </bean> -->
+
+	<bean class="com.example.dependencyinjection.Student" id="student">
+		<constructor-arg name="id" value="10" />
+		<constructor-arg name="studentName"
+			value="Pravin Parate" />
+	</bean>
+
+	<bean class="com.example.dependencyinjection.Student" id="stud">
+		<constructor-arg name="id" value="50"/>
+	</bean>
+
+
+</beans>

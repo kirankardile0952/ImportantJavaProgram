@@ -1,0 +1,90 @@
+https://github.com/kirankardile0952/DemoProgram.git
+
+Notes
+=================================================================================
+>git help
+
+>git help <command-name>
+
+>git help ->It provides frequently used several git commands.
+
+>git help <cmd-name> ->It opens documentation of that particular command.
+
+>git init -> It is used to create empty repository or re-initialize existing repo.
+
+>git status -> This command will display status of current repository
+
+Staged Files
+------------
+Files which are added and they are ready to commit.
+These file name will be displayed in green color
+
+
+Un-Statged Files
+------
+Modified files will be displayed here,we need to stage these files to commit
+These file names will be displayed in red color.
+
+Un-Tracked Files
+-----------------
+Newly created files,we need to stage them to commit
+These file names will be displayed in red color.
+
+>git add <file-name> -> This command is used to add file to staging area.
+
+>git add --a -> To add all files at a time to staging area.
+
+>git rm -> This command is used to un-stage newly created files
+	Syntax:- git rm --cached <file-name>
+
+>git commit ->This command is used to commit our changes to git local repository
+	Syntax: git commit -m 'commit-msg'
+Note:- Git local repository will be available in our machine only.
+Note:- When we  execute commit command it will consider all the files which are staging area. 
+========================================================
+
+************ To commit our files to remote repository Use below commands ***************
+1)git remote add origin <repo-url> (This reqires only first time)
+
+2)git push -u origin master (This is used to move changes from local to central)
+
+3)git checkout -> It is used to discard changes done in a file(undo operation)
+    syntax : git checkout -- <file-name>
+
+4)git reset HEAD <filename> (Used to unstage a file
+ \
+
+
+> git log ->To check commits history we will use git log command
+In commit logs it will display below details
+a)commit-id
+b)author
+c)timestamp
+d)commit message
+
+>git clone <repo-url>  -> To take existing project from repository to local system we will use git clone command.
+
+>git pull ->Before making any changes  to file(s) in local,it is highly recommended to take latest changes from repository.To take latest changes from repository
+we will use git pull command.
+
+>git stash -> It is used to record current changes and make working tree clean.
+==============================================================================================================================================================
+==============================================================================================================================================================
+
+************** GIT Branches and Pull Request *************** 
+>git clone -b <branch-name> <repo-url>  :-
+
+
+=========================================================
+echo "# DemoProgram" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kirankardile0952/2-SecondRepo.git
+git push -u origin main
+
+https://github.com/kirankardile0952/2-SecondRepo.git
+
+
+9975619069

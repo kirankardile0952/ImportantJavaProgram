@@ -1,0 +1,10 @@
+#Database Configuration : Postgresql
+spring.datasource.url=jdbc:postgresql://localhost:5432/PracticeDB
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+#Hibernate Configuration
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dilect=org.hibernate.dialect.PostgreSQL82Dialect
